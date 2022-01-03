@@ -3,3 +3,15 @@ title: "R Notebook"
 output: html_notebook
 ---
 
+```{r}
+library(readxl)
+base_JC = read_excel("Base_final.xls")
+
+# base2 = base_JC
+# base2$Local2= ifelse(base2$mangueira==0, 1, 2)
+# all(base2$Local2== base2$Local)
+# Local dá a mesma informação que mangueira
+# Se mangueira = 0 -> Local = 1 (Borel)
+# Se mangueira = 1 -> Local = 2 (Mangueira)
+
+```
